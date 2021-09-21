@@ -1,15 +1,25 @@
 import React, { useState} from 'react'
 import {NativeUI} from "u-webview-ui";
 import {getSomething} from "./request";
-import { useSafeArea } from "u-webview-hook";
+import {useSafeArea, setFullScreen, useAppInfo} from "u-webview-hook";
 
 
 function App() {
   const [paddingTop,setPaddingTop] = useState(0)
+  const [appInfo,setAppInfo] = useState({})
+
+  useAppInfo((data => {
+    console.log(data)
+    if (data){
+      setAppInfo(data)
+    }
+  }))
 
   useSafeArea((top)=>{
     console.log(top)
-    setPaddingTop(top)
+    if(top){
+      setPaddingTop(top)
+    }
   })
 
   const handleClick1 = async ()=>{
@@ -20,14 +30,31 @@ function App() {
     NativeUI.textToast({type:type,text:'测试一下啊',duration:3000})
   }
 
+  const setFull=()=>{
+    setFullScreen(false, false, function(p1: any){
+      console.log(p1)
+    })
+  }
+
   return (
       <div className="App">
         <h1>测试页面</h1>
         <h3>safeArea:{paddingTop}</h3>
-        <button onClick={handleClick1}>加载按钮</button><br/>
-        <button onClick={()=>handleClick2('success')}>成功按钮</button><br/>
-        <button onClick={()=>handleClick2('error')}>失败按钮</button><br/>
-        <button onClick={()=>handleClick2('warning')}>警告按钮</button>
+        <h3>原生UI调用:</h3>
+        <div style={{display:'flex',justifyContent:'space-around',alignItems:"center",marginBottom:'20px'}}>
+          <button onClick={handleClick1}>加载按钮</button><br/>
+          <button onClick={()=>handleClick2('success')}>成功按钮</button><br/>
+          <button onClick={()=>handleClick2('error')}>失败按钮</button><br/>
+          <button onClick={()=>handleClick2('warning')}>警告按钮</button>
+        </div>
+        <button onClick={()=>setFull()}>
+          全屏调用js端请求
+        </button>
+        <h3>app信息</h3>
+        <ul>
+          <li>appName:{(appInfo as any).appName}</li>
+          <li>version:{(appInfo as any).version}</li>
+        </ul>
       </div>
   );
 }

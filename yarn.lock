@@ -622,51 +622,51 @@ typescript@^4.3.2:
   resolved "https://registry.npmjs.org/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
-u-webview-core@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-core/-/u-webview-core-0.4.7.tgz#5913678785524bd8b3b7b7ff1e72edbf85a578c4"
-  integrity sha512-vS8+nhgZx/Y1xtL0ArptrZAMovh1BfY3Ad7mx4Lkl4kNYeLMYDxmLxf4/EfF32Y+IIgVNMy2DO7BjEV71wXjsw==
+u-webview-core@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-core/-/u-webview-core-0.5.1.tgz#34d5fe93524a13b05ec45fe0f1da28edca13639e"
+  integrity sha512-hC6ef93NUI/pdt8E9xBUSydLDLIc5HSMuv9X8pkxbFlZ5A1BQyeYoJGpVdxXoq/dgYjYrQQLo7WOtxChU4HT2A==
   dependencies:
-    u-webview-event "^0.4.7"
-    u-webview-type "^0.4.7"
+    u-webview-event "^0.5.1"
+    u-webview-type "^0.5.1"
 
-u-webview-event@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-event/-/u-webview-event-0.4.7.tgz#3d5cb0b7aec727dfe16b656609a44eeac5f372f1"
-  integrity sha512-EQk1wllfxCxQxPEfFrov4SkPYZ0Qp8VgXYHOJjvYyux/INZkhPaQUVNMJDkbW/vq23ZuZH4ZDpH0j86LT1k8Xw==
+u-webview-event@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-event/-/u-webview-event-0.5.1.tgz#3a484302a48975b201dab4c85227153518c145fb"
+  integrity sha512-n4xII67mmBWRdUz+caoCswpPOmFeia6+HXBORWnuvSxuUjPumRO5qsVPkXLs+ZPwbTZVSkbgJp3jE31PVZRnlg==
   dependencies:
-    u-webview-type "^0.4.7"
+    u-webview-type "^0.5.1"
 
-u-webview-hook@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-hook/-/u-webview-hook-0.4.7.tgz#f265e385a2512d311892eaaa98ecaeabfe78ceb1"
-  integrity sha512-fj/xuyZ27QyXresoJZqEOKfTq+d6z1zV0obRnOi43gBay75eVfyk3QEq6W64Eah5wdldfroFERbt7Nd+DKL91A==
+u-webview-hook@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-hook/-/u-webview-hook-0.5.1.tgz#bfc35be855d5a5b4ae4a5282799cd5d059b89fb9"
+  integrity sha512-H3BKBoQ7dsBKNB4YurtYLxF8VYVY+AZFDT1Jxl4xpKgdMWSfL+LYGk5E9P6gdyAPCMC+lqpnjtvz91Rx+iKvRA==
   dependencies:
     history "4.10.1"
     react-ga "3.3.0"
-    u-webview-core "^0.4.7"
-    u-webview-event "^0.4.7"
+    u-webview-core "^0.5.1"
+    u-webview-event "^0.5.1"
 
-u-webview-http@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-http/-/u-webview-http-0.4.7.tgz#ad97d0d5c0f629e66f002028a61c9cb020855248"
-  integrity sha512-l/wjS8YAdKRKSARLOqZtHF7absBdn51GvgpcJfAKc0CAZLCB74uZ/+4eAxjOzI0LcNiqsU0VGV1EG9pcBR8qcQ==
+u-webview-http@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-http/-/u-webview-http-0.5.1.tgz#9059fb2b6f5f0631bac6d849071e341c3bab52e0"
+  integrity sha512-IL5Id9Z5mXWi+HTb4OnAzJqMvqZxptO5mk3CylIT1/KMAS9Dcv6QZkxw02h13vffF1WqNSD1JZtJouHiO3W30w==
   dependencies:
     axios "^0.21.4"
-    u-webview-core "^0.4.7"
-    u-webview-ui "^0.4.7"
+    u-webview-core "^0.5.1"
+    u-webview-ui "^0.5.1"
 
-u-webview-type@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-type/-/u-webview-type-0.4.7.tgz#3528e09009ffbd0fa11957f5662cba50061b2dc7"
-  integrity sha512-LslQQjL/WtEw3es4yUYTFXbiRMdGESKNfUL2t7U+fU5B+WF7oObY86x3wdUP3x7CWC2aCczqC08IBFUN4v8Iew==
+u-webview-type@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-type/-/u-webview-type-0.5.1.tgz#6f7ee42bfb61f15a15c6a5055d16ea54cd2e0bb6"
+  integrity sha512-3QM2RmJd2jcbvRMvKmxZqm04rb2+IR4wHwOJvxaUDrvivcoKuyrPQxQyBNrdIBP8b52HB0UwhauK7VXFnyHYAw==
 
-u-webview-ui@^0.4.7:
-  version "0.4.7"
-  resolved "https://registry.npmjs.org/u-webview-ui/-/u-webview-ui-0.4.7.tgz#020f944db6bf089a719f65ef8e8d586646787326"
-  integrity sha512-dKq/7fD/JwQ35syvmg+6kA34Vi7F5K9NLQkyqhaJ+hXNiMFX8FuvYepI3MSyZiDFQMzrNFqoCUUmh5qCeQ9nQw==
+u-webview-ui@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/u-webview-ui/-/u-webview-ui-0.5.1.tgz#e54dee00d4b36c387dc5e5acc617c589e584c998"
+  integrity sha512-PzxIY7SIo5fppyMP4nkNQMGiMPl4a+Tod2SR5NAgz7peUjkJ1Pyk7mihMJDYka9z6TknLt45XpZAL91FM8xALQ==
   dependencies:
-    u-webview-core "^0.4.7"
+    u-webview-core "^0.5.1"
 
 value-equal@^1.0.1:
   version "1.0.1"
