@@ -42,6 +42,6 @@ jobs:
           SOURCE: "dist"
           REMOTE_HOST: ${{ secrets.SSH_HOST }}
           REMOTE_USER: ${{ secrets.SSH_USERNAME }}
-          TARGET: /project/static/web/
+          TARGET: /project/static/web/webview_test
 
 
