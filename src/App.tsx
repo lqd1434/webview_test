@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import {NativeUI} from "u-webview-ui";
 import {getSomething} from "./request";
-import {useSafeArea} from "u-webview-hook";
+import { useSafeArea } from "u-webview-hook";
+
 
 function App() {
   const [paddingTop,setPaddingTop] = useState(0)
+
   useSafeArea((top)=>{
     console.log(top)
     setPaddingTop(top)
