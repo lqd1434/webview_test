@@ -22,11 +22,11 @@ function App() {
     }
   })
 
-  const handleClick1 = async ()=>{
+  const loading = async ()=>{
     await getSomething()
   }
 
-  const handleClick2 = (type:'success' | 'error' | 'warning')=>{
+  const openTextToast = (type:'success' | 'error' | 'warning')=>{
     NativeUI.textToast({type:type,text:'测试一下啊',duration:3000})
   }
 
@@ -42,10 +42,10 @@ function App() {
         <h3>safeArea:{paddingTop}</h3>
         <h3>原生UI调用:</h3>
         <div style={{display:'flex',justifyContent:'space-around',alignItems:"center",marginBottom:'20px'}}>
-          <button onClick={handleClick1}>加载按钮</button><br/>
-          <button onClick={()=>handleClick2('success')}>成功按钮</button><br/>
-          <button onClick={()=>handleClick2('error')}>失败按钮</button><br/>
-          <button onClick={()=>handleClick2('warning')}>警告按钮</button>
+          <button onClick={loading}>加载按钮</button><br/>
+          <button onClick={()=>openTextToast('success')}>成功按钮</button><br/>
+          <button onClick={()=>openTextToast('error')}>失败按钮</button><br/>
+          <button onClick={()=>openTextToast('warning')}>警告按钮</button>
         </div>
         <button onClick={()=>setFull()}>
           全屏调用js端请求
